@@ -1,5 +1,3 @@
-Hlam
-====
 
 ke-ke-ke-ke-ke-ke-ke-ke-ke
 ro-ro-ro-ro-ro-ro-ro-ro-ro
