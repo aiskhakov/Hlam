@@ -1,0 +1,25 @@
+============
+1) NGS and VDB are configuring in similar way
+
+./configure --with-debug --build=/home/iskhakov/work/git1/out
+
+ngs/ngs-sdk# ./configure --status
+build type: dbg
+build output path: TARGDIR = /home/iskhakov/work/git1/out/linux/gcc/x86_64/dbg
+includedir: /usr/local/ngs/ngs-sdk/include
+
+ncbi-vdb# ./configure --status
+build type: dbg
+build output path: TARGDIR = /home/iskhakov/work/git1/out/linux/gcc/x86_64/dbg
+includedir: /usr/local/ncbi/ncbi-vdb/include
+
+
+============
+2) TOOLS are requiring NGS libraries and VDB sources and libraries
+
+sra-tools# ./configure --with-debug --build=/home/iskhakov/work/git1/out --with-ngs-sdk-build=/home/iskhakov/work/git1/out --with-ncbi-vdb-build=/home/iskhakov/work/git1/out --with-ncbi-vdb-sources=/home/iskhakov/work/git1/ncbi-vdb
+
+sra-tools# ./configure --status
+build type: dbg
+build output path: TARGDIR = /home/iskhakov/work/git1/out/linux/gcc/x86_64/dbg
+includedir: /usr/local/ncbi/sra-tools/include
